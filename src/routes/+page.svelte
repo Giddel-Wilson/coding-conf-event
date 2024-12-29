@@ -278,9 +278,10 @@
 
 				<div
 					class="group relative mx-auto mb-8 w-full bg-cover bg-center bg-no-repeat px-6 py-10 md:w-max"
-					style="background-image: url('{ptT}'); background-size: 100% 100%"
 					in:fly={{ y: 20, duration: 300, delay: 200 }}
 				>
+
+                <img src="{ptT}" alt="Pattern Ticket" class="absolute inset-0 top-0 w-full h-full object-fill" />
 
 					<div class="flex items-center gap-4">
 						<div class="flex flex-col items-start">
