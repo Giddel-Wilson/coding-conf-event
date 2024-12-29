@@ -278,7 +278,7 @@
 
 				<div
 					class="group relative mx-auto mb-8 w-full bg-cover bg-center bg-no-repeat px-6 py-10 md:w-max"
-					style="background-image: url({ptT}); background-size: 100% 100%"
+					style="background-image: url('{ptT}'); background-size: 100% 100%"
 					in:fly={{ y: 20, duration: 300, delay: 200 }}
 				>
 
