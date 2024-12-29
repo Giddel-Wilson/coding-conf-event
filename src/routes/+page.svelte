@@ -277,21 +277,16 @@
 				</p>
 
 				<div
-					class="group relative mx-auto mb-8 w-full bg-cover bg-center bg-no-repeat px-6 py-10 md:w-max"
+					class="bg-image group relative mx-auto mb-8 w-full px-6 py-10 md:w-max"
 					in:fly={{ y: 20, duration: 300, delay: 200 }}
 				>
-
-                <img src="{ptT}" alt="Pattern Ticket" class="absolute inset-0 top-0 w-full h-full object-fill" />
-
 					<div class="flex items-center gap-4">
 						<div class="flex flex-col items-start">
 							<img src={fullLogo} alt="Coding Conf Logo" class="mb-2 h-6" />
-							<div class="dl w-max font-mono text-sm text-gray-400">
-								Jan 31, 2025 / Austin, TX
-							</div>
+							<div class="dl w-max font-mono text-sm text-gray-400">Jan 31, 2025 / Austin, TX</div>
 						</div>
 						<div
-							class="tnt md:ml-[10%] mt-16 w-full rotate-90 text-center font-mono text-lg text-gray-400"
+							class="tnt mt-16 w-full rotate-90 text-center font-mono text-lg text-gray-400 md:ml-[10%]"
 						>
 							#{ticketNumber}
 						</div>
@@ -338,19 +333,27 @@
 			radial-gradient(circle at bottom left, #1a1a2e, transparent 50%);
 		z-index: 0;
 	}
-  
-  @media (max-width: 320px) {
-    .dl{
-      font-size: small;
-    }
-    .tnt {
-      margin-left: -10px;
-    }
-  }
 
-  @media (max-width: 596px) {
-    .tnt {
-      margin-left: 10%;
-    }
-  }
+	.bg-image {
+		background-image: url('src/lib/images/pattern-ticket.svg');
+		background-size: 100% 100%;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	@media (max-width: 320px) {
+		.dl {
+			font-size: small;
+		}
+		.tnt {
+			margin-left: -10px;
+		}
+	}
+
+	@media (max-width: 596px) {
+		.tnt {
+			margin-left: 10%;
+		}
+	}
 </style>
