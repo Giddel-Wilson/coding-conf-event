@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
 	import { fade, fly } from 'svelte/transition';
 	import { Upload } from 'lucide-svelte';
 	import fullLogo from '$lib/images/logo-full.svg';
@@ -334,8 +333,11 @@
 		z-index: 0;
 	}
 
+
+
+	/* This could have been easily and accurately been done with tailwindcss */
 	.bg-image {
-		background-image: url('src/lib/images/pattern-ticket.svg');
+		background-image: url('../lib/images/pattern-ticket.svg');
 		background-size: 100% 100%;
 		background-size: contain;
 		background-position: center;
